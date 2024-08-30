@@ -1,7 +1,5 @@
 ---
-import NavBar from '../components/NavBar.astro'
 const name = 'Jhonny stiven agudelo tenorio'
-const title = 'Home Page'
 import MainLayouts from '../layouts/MainLayouts.astro'
 ---
 
@@ -11,7 +9,6 @@ import MainLayouts from '../layouts/MainLayouts.astro'
 		<h1>{name}</h1>
 		<p>Momento actual:{new Date().toLocaleTimeString()}</p>
 		<p id="current-time" ></p>
-
 	<script>
 		const currentDate = document.getElementById('current-time') as HTMLParagraphElement
 		const currentTime:string = new Date().toLocaleTimeString();
